@@ -1,0 +1,31 @@
+Package: parnpk
+Type: Package
+Title: My first package
+Version: 0.1.0
+Author: Tanaporn Sriklay
+Maintainer: The package maintainer <Tanaporn.sriklay@gmail.com>
+Description: Useful functions for ploting & interesting datasets. Also function which possibly used for conducting statistic test and calculating confidence interval given value, se and level of significance.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    ggplot2,
+    jsonlite,
+    dplyr,
+    scales, 
+    datasets,
+    reshape2,
+    scales,
+    reshape2
+RoxygenNote: 7.1.1
+Depends: 
+    R (>= 2.10),
+    ggplot2,
+    jsonlite,
+    dplyr,
+    scales, 
+    datasets,
+    reshape2,
+    scales,
+    reshape2
+

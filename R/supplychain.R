@@ -1,0 +1,23 @@
+#' supplychain
+#'
+#' @description This dataset contains trade data, value added of exports which
+#' each countries use and produce to the global trade and positions of the countries
+#' on global supply chain. The calculation based on OECD methodology by using global input-output
+#' tables published by OECD.
+#' (Explore methodology more: https://www.oecd.org/dac/aft/MappingGlobalValueChains_web_usb.pdf)
+#'
+#' @format A data frame with columns:
+#' \describe{
+#' \item{Country}{Exporting country}
+#' \item{Year}{Year of exporting (based on the released input-output tables by each coutries)}
+#' \item{VSShare}{Exporting sector : to the ratio of the "Domestic value added sent to third economies" to the economy's total gross exports. It captures the domestic value added contained in inputs sent to third economies for further processing and export through value chains. This is the "Seller" perspective or supply side in GVC participation.}
+#' \item{VS1Share}{Backward GVC participation: the ratio of the "Foreign value added content of exports" to the economy's total gross exports. This is the "Buyer" perspective or sourcing side in GVCs, where an economy imports intermediates to produce its exports }
+#' \item{Participation}{composed of two components reflecting the upstream and downstream links in international production chains. }
+#' \item{Position}{position of the countries on global supply chain (log(1+VS1Share)-log(VSShare))}
+#' }
+#' @examples
+#' supplychain
+#' @source \url{http://www.oecd.org/sti/ind/input-outputtables.htm}
+#'
+
+"supplychain"
